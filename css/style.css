@@ -1,0 +1,1034 @@
+/*************** Basic css style***********/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* color use in this project */
+
+	/* bg-color1: #fff;
+	bg-color2: #F6F7FB;
+	main-color: #0BAED9;
+	text-color-light-black: #333;
+	text-colorwhite: #fff;
+	text-color-black: #000;
+	text-color-white-light: #F6F7FB;
+	green-color: #24a313;
+	red-color: #d92a0b;
+	lightgray-border: #c8c3c3;
+	light-green: #27AE61;
+	hover-color: #0BAED9; */
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	line-height: 25px;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.row {
+	width: 100%;
+	float: left;
+}
+
+/* for 12 colum */
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+/* for all float */
+[class*="col-"] {
+	float: left;
+}
+
+
+
+/********************** main css start from here *********************/
+
+/* header section */
+
+.header {
+	width: 100%;
+	float: left;
+	border-bottom: 2px solid #0BAED9;
+	background: #fff;
+}
+
+.topheader {
+	width: 100%;
+	float: left;
+	background-color: #F6F7FB;
+	padding: 10px 0px;
+}
+
+.topheader span {
+	color: #333;
+	margin-right: 7px;
+}
+
+.top_social {
+	display: block;
+	text-align: right;
+}
+
+.top_social li {
+	display: inline-block;
+	margin-left: 10px;
+
+}
+
+.top_social li a {
+	color: #333;
+	font-size: 16px;
+}
+
+.top_social li a:hover {
+	color: #0BAED9;
+	transition: 0.5s;
+}
+
+.logo {
+	width: 100%;
+	padding: 15px 0px 8px 0px;
+
+}
+
+
+.menu {
+	width: 100%;
+	float: left;
+	padding: 15px 0px 8px 0px;
+
+}
+
+.menu ul {
+	display: block;
+	text-align: right;
+	margin-top: 8px;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.menu ul li a {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #333;
+	font-weight: 600;
+	margin-left: 15px;
+	letter-spacing: 2px;
+	position: relative;
+}
+
+.menu ul li a::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	left: 0;
+	top: calc(100% + 4px);
+	background-color: #0BAED9;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover::after {
+	width: 100%;
+
+}
+
+.menu ul li a.active::after {
+	width: 100%;
+}
+
+/* banner section code here */
+
+.banner {
+	width: 100%;
+	float: left;
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	/* background-attachment: fixed; */
+
+}
+
+.inner_banner {
+	text-align: center;
+	padding: 250px 0px;
+
+}
+
+.inner_banner h1 {
+	font-size: 50px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #F6F7FB;
+	letter-spacing: 3px;
+}
+
+.line {
+	width: 600px;
+	height: 2px;
+	background-color: #0BAED9;
+	margin: 0 auto;
+}
+
+.inner_banner p {
+	font-size: 20px;
+	color: #F6F7FB;
+	margin-top: 20px;
+}
+
+.banerbtn {
+	display: inline-block;
+	padding: 15px 35px;
+	color: #F6F7FB;
+	background-color: transparent;
+	margin-top: 30px;
+	font-size: 17px;
+	font-weight: 500;
+	word-spacing: 1px;
+	border: 1px solid #0BAED9;
+	transition: 0.5s;
+}
+
+.banerbtn:hover {
+
+	border: 1px solid transparent;
+	background-color: #0BAED9;
+}
+
+
+/* service section start here */
+
+
+
+/* title for all section start here */
+.title {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 50px 0px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.title h1 {
+	font-size: 90px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.1);
+	font-weight: 700;
+}
+
+.uptitle {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.uptitle h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #0BAED9;
+	margin-top: -25px;
+	font-weight: 600;
+}
+
+.uptitle h3 {
+	font-size: 40px;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	margin-top: 8px;
+	font-weight: 700;
+}
+
+/* title for all section end here */
+
+/* card design start here */
+
+.services {
+	width: 100%;
+	float: left;
+	background-image: url(../images/parallax-9.png), url(../images/parallax-10.png);
+	background-repeat: no-repeat;
+	background-position: left bottom, right bottom;
+	padding: 80px 0px;
+}
+
+.cards {
+	width: 32%;
+	float: left;
+	text-align: center;
+	height: 400px;
+	box-shadow:
+		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	position: relative;
+	z-index: 2;
+	
+}
+
+/* try to add some efect */
+.cards::after {
+	content: '';
+	width: 100%;
+	height: 0%;
+	left: 0;
+	top: 0;
+	background-color: #0BAED9;
+	position: absolute;
+	transition: 1s;
+	z-index: -1;
+}
+
+.card_topline {
+	width: 100%;
+	height: 4px;
+	background-color: #0BAED9;
+	margin-bottom: 20px;
+	z-index: -2;
+}
+
+.topline_midle {
+	background-color: #24a313;
+}
+
+.toplinelast {
+	background-color: #d92a0b;
+}
+
+.card_content {
+	width: 100%;
+	padding: 45px;
+	z-index: 2;
+}
+
+.card_icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(171, 182, 176, 0.733);
+	transform: rotate(45deg);
+	z-index: 2;
+}
+
+.card_icon .fa {
+	font-size: 25px;
+	line-height: 50px;
+	color: #0BAED9;
+	transform: rotate(-45deg);
+	z-index: 2;
+
+}
+
+.cards h2 {
+	font-size: 25px;
+	line-height: 40px;
+	text-transform: capitalize;
+	color: #333;
+	padding: 0px 10px;
+	margin-top: 15px;
+	z-index: 2;
+
+}
+
+.cards p {
+	font-size: 18px;
+	line-height: 26px;
+	color: rgb(78, 70, 70);
+	margin-top: 10px;
+	padding: 0px 10px;
+	z-index: 2;
+
+}
+
+.card1 {
+	margin-top: 25px;
+	height: 400px;
+
+}
+
+.card2 {
+	margin-left: 24px;
+
+}
+
+.card3 {
+	float: right;
+	margin-top: 25px;
+	height: 400px;
+}
+
+.card2::after {
+	background-color: #24a313;
+}
+
+
+.card3::after {
+	background-color: #d92a0b;
+}
+
+
+
+
+
+.cards:hover::after {
+	height: 100%;
+
+}
+
+.cards:hover h2,
+.cards:hover p {
+	color: #fff;
+}
+
+.cards:hover .card_icon .fa {
+	color: #000;
+}
+
+/* portfolio section start */
+
+.works {
+	width: 100%;
+	float: left;
+	padding: 80px 0px;
+	
+}
+
+.inner_works {
+	width: 100%;
+	float: left;
+	position: relative;
+
+}
+
+.inner_hover {
+	position: absolute;
+	width: 95%;
+	height: 97%;
+	left: 0;
+	top: 0;
+	background-color: rgb(11, 174, 217, 0.5);
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	
+
+}
+
+.inner_works:hover .inner_hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+.inner_hovericons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+
+.inner_hovericons a {
+	width: 47px;
+	height: 47px;
+	display: inline-block;
+	border: 1px solid #F6F7FB;
+	margin-left: 10px;
+	transition: 0.5s;
+}
+
+.inner_hovericons a .fa {
+	font-size: 30px;
+	line-height: 47px;
+	color: #fff;
+}
+
+.inner_hovericons a:hover {
+	background-color: #0BAED9;
+}
+
+.rowport {
+	margin-top: 10px;
+}
+
+
+/* about me section */
+
+.aboutme {
+	width: 100%;
+	float: left;
+	background-image: url(../images/parallax-9.png), url(../images/parallax-10.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	padding: 80px 0px;
+}
+
+.aboutme_left {
+	width: 100%;
+	float: left;
+}
+
+.aboutme_left img {
+	width: 90%;
+}
+
+.aboutme_right {
+	width: 100%;
+	float: left;
+	padding: 0px 10px;
+}
+
+.aboutme_right p {
+	font-size: 18px;
+	line-height: 26px;
+	color: #333;
+	margin: 20px 0px;
+
+}
+
+.skill_box {
+	display: inline-block;
+	padding: 3px 8px;
+	border: 1px solid #0BAED9;
+	margin-right: 5px;
+
+}
+
+.btndownloadcv {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #0BAED9;
+	color: #fff;
+	margin: 20px 0px;
+	font-weight: 500;
+	border: 1px solid transparent;
+}
+
+.btndownloadcv:hover {
+	border: 1px solid #0BAED9;
+	background-color: transparent;
+	color: #333;
+
+}
+
+/* --------footer section design------- */
+footer {
+	width: 100%;
+	min-width: 1140px;
+	float: left;
+	z-index: 100;
+}
+
+.footerbot {
+	background-color: #000000;
+	text-align: center;
+}
+
+.footerbot p {
+	font-size: 15px;
+	line-height: 25px;
+	color: #333;
+	padding: 15px 0px;
+	text-transform: capitalize;
+}
+
+.footerbot a {
+	text-transform: capitalize;
+	color: #333;
+	text-decoration: underline;
+}
+
+.footerbot a:hover {
+	color: #0BAED9;
+}
+
+
+/* --------------------contact design page start here------------------- */
+
+
+
+/* sup banner design  for all section*/
+.supbanner {
+	width: 100%;
+	float: left;
+	background-color: #48524d;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg.jpg);
+	padding: 60px 0px;
+
+
+}
+
+.innersupbanner {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.innersupbanner h1 {
+	font-size: 35px;
+	color: #F6F7FB;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.innersupbanner a {
+	color: #fff;
+	transition: 0.5s;
+}
+
+.innersupbanner a:hover {
+	color: #01bafd;
+}
+
+.innersupbanner p {
+	font-size: 18px;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+/* contacts icon design */
+
+.contact {
+	width: 100%;
+	float: left;
+	padding: 70px 0px;
+	background-color: #F8F9FA;
+}
+
+.top_contact {
+	width: 100%;
+	float: left;
+	padding: 60px 0px;
+}
+
+.contact_icons {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+
+.contact_icons .cicon {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background-color: #0BAED9;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.contact_icons .cicon .fa {
+	font-size: 30px;
+	line-height: 80px;
+	color: #fff;
+}
+
+.contact_icons p {
+	font-size: 16px;
+	margin-top: 20px;
+	color: #333;
+}
+
+.ctitle {
+	font-size: 18px;
+	color: #000;
+	font-weight: 500;
+}
+
+.contact_icons p a {
+	color: #333;
+}
+
+
+/* contact form design */
+
+.mainforrm {
+	width: 100%;
+	float: left;
+	background-image: url(../images/parallax-9.png), url(../images/parallax-10.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+
+}
+
+.inner_form {
+	width: 100%;
+	float: left;
+	background-color: rgb(255, 255, 255);
+	padding: 30px;
+}
+
+.inner_form h1 {
+	font-size: 30px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.form_box {
+	width: 100%;
+	float: left;
+}
+
+.boxleft {
+	width: 48%;
+	float: left;
+}
+
+.boxright {
+	width: 48%;
+	float: right;
+}
+
+.inner_form label {
+	font-size: 16px;
+	margin: 15px 0px 10px 0px;
+	display: inline-block;
+	color: #0BAED9;
+	text-transform: uppercase;
+}
+
+.Inputdata {
+	width: 100%;
+	padding: 14px 15px;
+	font-size: 16px;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #c8c3c3;
+	text-transform: capitalize;
+	outline: none;
+}
+
+.Inputdata:focus {
+	border: 1px solid #0BAED9;
+
+}
+
+.textarea {
+	width: 100%;
+	resize: none;
+	font-size: 16px;
+	color: #fff;
+	padding: 14px 15px;
+	line-height: 26px;
+	border: 1px solid #c8c3c3;
+	background-color: transparent;
+	outline: none;
+}
+
+.textarea:focus {
+	border: 1px solid #01bafd;
+}
+
+.formbtn {
+	display: inline-block;
+	padding: 12px 20px;
+	background-color: #0BAED9;
+	color: #fff;
+	margin: 20px 0px;
+	font-weight: 500;
+	outline: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.formbtn:hover {
+	border: 1px solid #0BAED9;
+	background-color: transparent;
+	color: #333;
+}
+
+/* map section design */
+
+.contactmap {
+	width: 100%;
+	float: left;
+}
+
+.conmap {
+	width: 100%;
+	min-height: 600px;
+	border: none;
+}
+
+
+/*-------------- portfolio page disgn changes here ---------*/
+
+.titleportfolio {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+
+.titleportfolio h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 15px 0px;
+	color: #333;
+
+}
+
+.titleportfolio p {
+	font-size: 16px;
+	text-transform: capitalize;
+	margin: 15px 0px;
+	color: #333;
+}
+
+/*----------------- about me page redesign------------ */
+.aboutmepage {
+	width: 100%;
+	float: left;
+	background-image: url(../images/parallax-9.png), url(../images/parallax-10.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	padding: 80px 0px;
+}
+
+.aboutme_top {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.aboutme_top .mypic {
+	width: 30%;
+}
+
+.aboutmepage2_bootom {
+	width: 100%;
+	float: left;
+	text-align: justify;
+}
+
+.aboutmepage2_bootom h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.aboutmepage2_bootom p {
+	font-size: 18px;
+	line-height: 26px;
+	color: rgb(78, 70, 70);
+	margin: 20px 0px;
+}
+
+
+/*------------- services page design here--------------- */
+
+
+.moreaboutservicetop {
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.moreaboutservicetop h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 15px 0px;
+	color: #333;
+}
+
+.moreaboutservicetop p {
+	font-size: 18px;
+	text-transform: capitalize;
+	margin: 15px 0px;
+	color: #333;
+}
+
+
+/* new style card design */
+
+.newstylecard {
+	width: 100%;
+	float: left;
+	padding: 80px 0px;
+}
+
+.cardcotainer {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 820px;
+	/* border: 1px solid black; */
+}
+
+.new-card {
+	width: 32%;
+	float: left;
+	text-align: center;
+	height: 400px;
+	box-shadow:
+		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+		transition: 0.5s;
+}
+
+
+.new-card_topline {
+	width: 100%;
+	height: 4px;
+	background-color: #27AE61;
+}
+
+.new-card_content {
+	width: 100%;
+	padding: 45px;
+}
+
+.new-card_icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(171, 182, 176, 0.733);
+	transform: rotate(45deg);
+}
+
+.new-card_icon .fa {
+	font-size: 25px;
+	line-height: 50px;
+	color: #0BAED9;
+	transform: rotate(-45deg);
+}
+.newcard-text{
+	width: 100%;
+	margin-top: 35px;
+}
+.newcard-texts h2 {
+	font-size: 25px;
+	line-height: 40px;
+	text-transform: capitalize;
+	color: #333;
+	padding: 0px 10px;
+	margin-bottom: 15px;
+	z-index: 2;
+
+}
+
+.newcard-text p {
+	font-size: 18px;
+	line-height: 26px;
+	color: rgb(78, 70, 70);
+	margin-top: 10px;
+	padding: 0px 10px;
+	z-index: 2;
+
+}
+
+.newcard1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.newcard2 {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.newcard3{
+  position: absolute;
+  left: 0%;
+  top: 25%;
+}
+.newcard4{
+	position: absolute;
+	right: 0;
+	top: 25%;
+}
+.linecolor2{
+	background-color: #da5a11;
+}
