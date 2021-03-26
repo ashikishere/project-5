@@ -596,11 +596,50 @@ footer {
 	width: 100%;
 	min-width: 1140px;
 	float: left;
-	z-index: 100;
+	background-color: #000000;
+	padding: 10px 0px;
 }
 
+.f_icon{
+	display: block;
+	text-align: center;
+	/* padding: 10px 0px; */
+}
+.f_icon li{
+  display:inline-block;
+  list-style: none;
+  margin-left: 5px;
+}
+.f_icon li a{
+  font-size: 16px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  background-color: #0BAED9;
+  display:inline-block;
+  border-radius: 50%;
+  line-height: 30px;
+  transition: transform 0.8s;
+}
+.f_icon li a:hover{
+	background-color: #da5a11;
+	transform: rotate(360deg);
+}
+
+.f_icon .icon-1{
+	background-color: #0E8BF1;
+}
+.f_icon .icon-2{
+	background: #1DA1F2;
+}
+.f_icon .icon-3{
+	background: #9632BD;
+}
+.f_icon .icon-4{
+	background: #0BAED9;
+}
 .footerbot {
-	background-color: #000000;
+	
 	text-align: center;
 }
 
@@ -608,7 +647,6 @@ footer {
 	font-size: 15px;
 	line-height: 25px;
 	color: #333;
-	padding: 15px 0px;
 	text-transform: capitalize;
 }
 
