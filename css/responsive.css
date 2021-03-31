@@ -1,0 +1,260 @@
+
+  
+ /* Extra small to mediam device */
+
+
+ @media only screen and (min-width:200px) and (max-width: 768px) {
+    /* ==index page== */
+   /* header section */
+   .topheader span{
+       font-size: 13;
+   }
+    .topheader span:nth-of-type(2){
+       display: none;
+   }
+    .topheader span:last-of-type{
+        display: none;
+    }
+    .col-md-12{
+        width: 100%;
+        float: left;
+    }
+    .logo{
+        text-align: center;
+        
+    }
+    .menu{
+        padding: 0;
+    }
+    .menu ul{
+        text-align: center;
+        margin-top: 0;
+    }
+    .menu ul li{
+        display: block;
+    }
+   /* baner section */
+   .baner{
+       background: none;
+   }
+   .inner_banner{
+       padding: 100px 0px;
+   }
+   /* title re */
+   .title{
+       padding: 20px 0px;
+   }
+   .title h1{
+       font-size: 50px;
+   }
+   .uptitle h2{
+       font-size: 20px;
+       margin-top: -10px;
+   }
+   .uptitle h3{
+       font-size: 25px;
+       margin-top: 0;
+   }
+
+   /* service */
+   .services{
+       background: none;
+       padding: 20px 0px;
+   }
+   .cards{
+       width: 100%;
+       box-shadow: none;
+   }
+   .cards::after{
+       height: 100%;
+   }
+   .cards .card_icon .fa {
+	color: #000;
+}
+   .cards h2,
+    .cards p {
+	color: #fff;
+}
+   .card1,.card2,.card3{
+       margin: 0px;
+   }
+   .card1,.card2{
+       margin-bottom: 20px;
+   }
+   /* portfolio section */
+   .works{
+       padding: 20px 0px;
+   }
+   .inner_works img{
+	width: 100%;
+    }
+    .inner_hover {
+        width: 100%;
+    }
+    /* about me */
+    .aboutme{
+        padding: 20px 0px;
+        background: none;
+    }
+    .supbanner{
+        padding: 30px 0px;
+    }
+    /* ====services  page=== */
+
+
+    .moreaboutservicetop{
+        margin-bottom: 0;
+    }
+    .moreaboutservicetop h2{
+      font-size: 30px;
+      /* margin: 0; */
+    }
+    .moreaboutservicetop p{
+        display: none;
+      }
+    .newstylecard {
+        padding: 20px 0px;
+    }
+    .cardcotainer{
+        height: auto;
+    }
+    .new-card{
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+    .new-card:last-child{
+        margin-bottom: 0;
+    }
+    /*=== aboutmepage==== */
+    .aboutmepage {
+        background: none;
+        padding: 20px 0px;
+    }
+    .aboutme_top .mypic{
+        margin-bottom: 20px;
+    }
+    .aboutmepage2_bootom h1{
+        text-align: center;
+    }
+    /* ==porfolio page ==*/
+    .titleportfolio h1 {
+        font-size: 30px;
+        margin: 15px 0px;
+    }
+    .titleportfolio p {
+       display: none;
+    }
+    /* ==contact page ==*/
+    .contact{
+        padding: 20px 0px;
+    }
+    .top_contact{
+        padding: 10px 0px;
+    }
+    .contact_icons .cicon{
+        width: 60px;
+        height: 60px;
+    }
+    .contact_icons .cicon .fa{
+        line-height: 60px;
+    }
+ }
+  
+
+ @media only screen and (min-width: 769px) and (max-width: 968px) {
+    .col-lg-6{
+        width: 50%;
+    }
+    .col-lg-12{
+        width: 100%;
+    }
+    .menu ul li {
+        margin-left: 0;
+ }
+    .inner_banner {
+        padding: 150px 0px;
+    }
+    .services{
+        padding: 50px 0px;
+    }
+    .card_content{
+        padding: 15px;
+    }
+    .cards {
+        width: 32.5%;
+        /* height: 410px; */
+        background: #fff;
+        
+    }
+    .cards h2{
+        padding: 0;
+    }
+    .cards p{
+        padding: 0;
+    }
+    .card1 {
+        margin-top: 0;
+
+    }
+    .card2{
+        margin-left: 9px;
+    }
+    .card3 {
+        margin-top: 0;
+    }
+    .cards::after{
+        height: 100%;
+    }
+    .cards .card_icon .fa {
+     color: #000;
+ }
+    .cards h2,
+     .cards p {
+     color: #fff;
+ }
+    .works{
+        padding: 50px 0px;
+    }
+    .inner_hovericons a {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 5px;
+        
+    }
+    
+    .inner_hovericons a .fa {
+        font-size: 20px;
+        line-height: 35px;
+        
+    }
+    .works{
+        padding: 50px 0px;
+    }
+
+    /* servicepage */
+    .newstylecard {
+        padding: 50px 0px;
+    }
+    .cardcotainer{
+        height: auto;
+    }
+    .new-card {
+        width: 49%;
+        /* box-shadow: none; */
+        position: static;
+        margin: 8px 0px;
+        transform: none;
+    }
+    .newcard2,.newcard4{
+        float: right;
+    }
+    
+ }
+ 
+ 
+
+ 
+  
