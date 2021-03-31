@@ -183,7 +183,7 @@ li {
 .banner {
 	width: 100%;
 	float: left;
-	background-image: url(../images/banner.jpg);
+	background-image:url(../images/banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -484,6 +484,7 @@ li {
 	border: 1px solid #F6F7FB;
 	margin-left: 10px;
 	transition: 0.5s;
+	margin-bottom: 5px; 
 }
 
 .inner_hovericons a .fa {
@@ -941,7 +942,7 @@ footer {
 	width: 100%;
 	float: left;
 	position: relative;
-	height: 820px;
+	height: 860px;
 	/* border: 1px solid black; */
 }
 
@@ -949,7 +950,7 @@ footer {
 	width: 32%;
 	float: left;
 	text-align: center;
-	height: 400px;
+	height: 420px;
 	box-shadow:
 		0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -969,7 +970,7 @@ footer {
 
 .new-card_content {
 	width: 100%;
-	padding: 45px;
+	padding: 40px;
 }
 
 .new-card_icon {
