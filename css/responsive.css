@@ -4,6 +4,9 @@
 
 
  @media only screen and (min-width:200px) and (max-width: 768px) {
+    .go_top{
+       display: none;
+    }
     /* ==index page== */
    /* header section */
    .topheader span{

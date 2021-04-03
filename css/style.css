@@ -559,6 +559,7 @@ li {
 	background-color: transparent;
 	color: #333;
 
+
 }
 
 /* --------footer section design------- */
@@ -568,7 +569,33 @@ footer {
 	background-color: #000000;
 	padding: 10px 0px;
 }
-
+.inner_footer-imforamtion{
+	width: 100%;
+	float: left;
+	padding:10px 0px;
+	/* margin: 10px 0px; */
+}
+.navigation-fotter{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.navigation-fotter li{
+	display: inline-block;
+	margin-left: 15px;
+}
+.navigation-fotter li a{
+	display: inline-block;
+	font-size: 18px;
+	color: #333;
+	text-transform: uppercase;
+	margin-left: 15px;
+	transition: 0.5s;
+}
+.navigation-fotter li a:hover{
+	color: #01bafd;
+	transform: translateX(5px);
+}
 .f_icon{
 	display: block;
 	text-align: center;
@@ -629,7 +656,27 @@ footer {
 	color: #0BAED9;
 }
 
-
+/* go top add */
+.go_top{
+	display: inline-block;
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	font-size: 30px;
+	background-color:#01bafd;
+	color: white;
+	padding: 7px 10px;
+	border-radius: 5px;
+	z-index: 1000;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
+  }
+  .go_top:hover{
+	background-color: #7cafb9;
+	transition: 0.5s;
+  }
 /* --------------------contact design page start here------------------- */
 
 
